@@ -1528,3 +1528,15 @@ Cannot render console from 190.115.177.54! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.115.177.54 at 2019-07-27 15:15:16 +0000
 Cannot render console from 190.115.177.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts" for 190.115.177.54 at 2019-07-27 15:15:21 +0000
+Cannot render console from 190.115.177.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.6ms)
